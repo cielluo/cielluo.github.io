@@ -112,11 +112,11 @@
 <meta name="keywords" content="JavaScript,数据类型">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript 数据类型笔记">
-<meta property="og:url" content="http://yoursite.com/2018/08/07/javascript-types/index.html">
+<meta property="og:url" content="http://ls-morning.github.io/2018/08/07/javascript-types/index.html">
 <meta property="og:site_name" content="Rainbow">
 <meta property="og:description" content="写在所有的前面：写技术类的笔记，只是为了自我总结，在自己的知识结构上查缺补漏。这篇文章简单总结了JavaScript中存在的数据类型及常用判断和处理方法，以及一些相关面试题。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-07T11:53:44.093Z">
+<meta property="og:updated_time" content="2018-08-08T04:53:50.189Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript 数据类型笔记">
 <meta name="twitter:description" content="写在所有的前面：写技术类的笔记，只是为了自我总结，在自己的知识结构上查缺补漏。这篇文章简单总结了JavaScript中存在的数据类型及常用判断和处理方法，以及一些相关面试题。">
@@ -126,7 +126,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/08/07/javascript-types/"/>
+  <link rel="canonical" href="http://ls-morning.github.io/2018/08/07/javascript-types/"/>
 
 
 
@@ -305,7 +305,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/07/javascript-types/">
+    <link itemprop="mainEntityOfPage" href="http://ls-morning.github.io/2018/08/07/javascript-types/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ciel">
@@ -347,12 +347,24 @@
                 
               
 
-              <time title="创建时间：2018-08-07 16:16:25 / 修改时间：23:53:44" itemprop="dateCreated datePublished" datetime="2018-08-07T16:16:25+12:00">2018-08-07</time>
+              <time title="创建时间：2018-08-07 16:16:25" itemprop="dateCreated datePublished" datetime="2018-08-07T16:16:25+12:00">2018-08-07</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-08-08 16:53:50" itemprop="dateModified" datetime="2018-08-08T16:53:50+12:00">2018-08-08</time>
               
             
           </span>
@@ -465,10 +477,10 @@
 <h3 id="判断Array类型"><a href="#判断Array类型" class="headerlink" title="判断Array类型"></a>判断Array类型</h3><p>新版本的浏览器普遍支持Array.isArray()函数，但为了兼容老版以及了解isArray的机制，<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (!<span class="built_in">Array</span>.isArray) &#123;</span><br><span class="line">    <span class="built_in">Array</span>.isArray = <span class="function"><span class="keyword">function</span> <span class="title">isArray</span>(<span class="params">arg</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">Object</span>.prototype.toString.call(arg) === <span class="string">"[object Array]"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>String和Array属于运用较多、原生函数也很多的类型，其常用原生函数会在之后的笔记中详细总结 :)</p>
 <h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><ol>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Data_structures" target="_blank" rel="noopener"><em>JavaScript 数据类型和数据结构</em> - Web技术文档</a></li>
-<li><a href="http://cherryblog.site/Front-interview.html" target="_blank" rel="noopener"><em>前端面试</em> - Cherry’s Blog</a></li>
-<li><a href="http://wiki.jikexueyuan.com/project/brief-talk-js/on-six-data-type.html" target="_blank" rel="noopener"><em>浅谈 javascript 六种数据类型以及特殊注意点</em> - 极客学院</a></li>
-<li><a href="https://juejin.im/post/59f7c5f551882529452fba6b" target="_blank" rel="noopener"><em>从 Number.isNaN 与 isNaN 的区别说起</em> - 掘金</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Data_structures" target="_blank" rel="noopener">JavaScript 数据类型和数据结构 - Web技术文档</a></li>
+<li><a href="http://cherryblog.site/Front-interview.html" target="_blank" rel="noopener">前端面试 - Cherry’s Blog</a></li>
+<li><a href="http://wiki.jikexueyuan.com/project/brief-talk-js/on-six-data-type.html" target="_blank" rel="noopener">浅谈 javascript 六种数据类型以及特殊注意点 - 极客学院</a></li>
+<li><a href="https://juejin.im/post/59f7c5f551882529452fba6b" target="_blank" rel="noopener">从 Number.isNaN 与 isNaN 的区别说起 - 掘金</a></li>
 </ol>
 
       
@@ -484,6 +496,20 @@
 
     
 
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Ciel</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://ls-morning.github.io/2018/08/07/javascript-types/" title="JavaScript 数据类型笔记">http://ls-morning.github.io/2018/08/07/javascript-types/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
     
 
     <footer class="post-footer">
@@ -514,6 +540,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/08/javascript-asynchronous/" rel="prev" title="(Draft)JavaScript中的异步操作 promise & async">
+                (Draft)JavaScript中的异步操作 promise & async <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -594,7 +624,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -638,7 +668,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">5</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -794,8 +828,6 @@
 
 
 
-  
-
 
 
 
@@ -821,11 +853,6 @@
   
   
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
@@ -941,8 +968,6 @@
     count: 线条的总数量, 默认: 150
     zIndex: 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1
   -->
-  
-    <script type="text/javascript" color="135,206,250" opacity='0.5' zIndex="-1" count="150" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
   
 
 </body>
